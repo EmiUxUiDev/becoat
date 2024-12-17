@@ -1,0 +1,42 @@
+blockquote {
+  font-style: italic;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Ajusta el ancho mínimo de las tarjetas */
+  grid-gap: 20px; /* Espacio entre tarjetas */
+}
+
+.testimonial-card {
+  /* Estilos adicionales para las tarjetas */
+  height: 300px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* display: flex;
+  justify-content: center; */
+}
+.testimonial-card img {
+   width:200px; 
+   border-radius: 50%;
+   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+   
+ 
+}
+
+
+@media (min-width: 768px) {
+  blockquote {
+    margin: 2rem auto;
+  }
+}

@@ -1,0 +1,25 @@
+/* Mobile First */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff8c;
+    padding: 0.25rem 0 0 0 ;
+    border-bottom:3px solid  #ffde20;
+  }
+  
+  
+  .logo {
+    width: 100px;
+  }
+  
+  /* Tablet */
+  @media (min-width: 768px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.5rem 2rem;
+  
+    }
+  
+  }
