@@ -1,0 +1,9 @@
+.banner_container {
+    background-color: var(--clr-secondary);
+    padding: 2px 0 2px 0;
+    font-family: var(--font-2);
+    font-weight: 600;
+    font-size: var(--font-size-small);
+    box-shadow: 2px 2px 10px rgba(121, 113, 3, 0.2);
+    text-align: center;
+}

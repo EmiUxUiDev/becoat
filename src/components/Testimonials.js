@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+/* import React, { useEffect, useState } from "react";
 import testimonialsData from "../data/testimonials.json";
 import "../styles/Testimonials.css";
 
@@ -30,3 +30,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+ */

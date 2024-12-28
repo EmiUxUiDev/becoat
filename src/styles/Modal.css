@@ -1,0 +1,170 @@
+.my-modal {
+  /* Estilos para el modal */
+  width: 90vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: var(--rnd-soft);
+  z-index: 999;
+  font-weight: 600;
+}
+.LogoTitulo{
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-modal h2{
+  font-family: var(--font-2);
+  text-transform:uppercase;
+  color: var(--clr-dark-grey);
+  font-weight: 900;
+  
+}
+.my-overlay {
+  /* Estilos para el overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.modal-content {
+  font-family: var(--font-2);
+  border-radius: var(--rnd-med);
+}
+#becoatLogo{
+  width: 25vw;
+}
+.inputs_container {
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-direction: column;
+
+  /* flex-wrap: wrap; */
+  margin: 0.5rem 0;
+  font-size: var(--font-size-reg);
+}
+.inputs_container > label {
+  padding: 2px;
+  margin: 0.5rem;
+}
+
+
+.inputs_container label > select {
+  height: 35px;
+  width: 100%;
+  margin: 0.4rem 0;
+  border: 1px solid #000;
+  border-radius: var(--rnd-soft);
+  background-color: var(--clr-light-grey);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  font-size: var(--font-size-reg);
+}
+.inputs_container label > input {
+  height: 30px;
+  width: 80px;
+  margin: 0.4rem 0.2rem;
+  border: 1px solid #000;
+  padding-top: 5px;
+  border-radius: var(--rnd-soft);
+  background-color: var(--clr-light-grey);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  font-size: var(--font-size-reg);
+}
+.input_container{
+  display: flex;
+  align-items: center;
+  
+}
+#precio_m2{
+  box-shadow: none;
+  margin-left: 0.5rem;
+  border: none;
+}
+
+.data_entry{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+label.label_contenedor_radio {
+  margin-top: 2rem;
+}
+.radio_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div.radio_container>label  {
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+.opcion {
+  padding: 0.5rem 0.2rem;
+  display: flex;
+  color: var(--clr-dark-grey);
+  font-weight: 500;
+}
+#radio {
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+}
+.button_container{
+  margin: 2rem 0 0.5rem 0;
+}
+#calcular_btn{
+  width: 100%;
+  margin-right: 10px;
+  font-weight: 600;
+  outline: 1px solid #000;
+  border: none;
+  border-radius: var(--rnd-med);
+  padding: 8px;
+  background-color: var(--clr-secondary);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-reg);
+}
+button.cerrar_btn{
+  width: 50%;
+  margin: 0.5rem auto 0 50%;
+  background-color: #ffffff;
+  border-radius: var(--rnd-med);
+  outline: 1px solid #000;
+  border: none;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  font-size: var(--font-size-reg);
+  padding: 8px;
+  font-weight: 600;
+}
+.calcula_svg{
+  width: 20px;
+  height: 20px;
+  stroke: var(--clr-dark-grey); 
+}
+.resultado{
+  height: 40px;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: flex-end;
+}
+.resultado>p{
+  color: var(--clr-primary);
+  font-size: var(--font-size-mid);  
+}

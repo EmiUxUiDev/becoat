@@ -1,0 +1,14 @@
+[
+    {
+      "tipo": "Pintura Látex",
+      "precioMetroCuadrado": 1500
+    },
+    {
+      "tipo": "Esmalte Sintético",
+      "precioMetroCuadrado": 2000
+    },
+    {
+      "tipo": "Reparación de Superficie",
+      "precioMetroCuadrado": 1000
+    }
+  ]

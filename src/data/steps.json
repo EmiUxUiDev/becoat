@@ -1,0 +1,21 @@
+[
+    {
+      "problem": "¿Elegí una tarea de la lista desplegable?",
+      "solution": "Debajo, aparecerá el valor en pesos $ por m². ","image":"lista.png"
+    },
+    {
+      "problem": "Luego, ingresa largo y ancho del muro.",
+      "solution": "Ej.: Podes sumar todos los largos de los muros y luego completar."
+      ,"image":"cargar.png"
+    },
+    {
+      "problem": "Selecciona es estado del muro.",
+      "solution": "Si un muro presenta irregularidades y/o desprendimientos, debera ser reparado previamente."
+      ,"image":"radio.svg"
+    },
+    {
+      "problem": "Por útimo, presioná el botón calcular.",
+      "solution": "Eso calculará el precio teniendo en cuenta, producto a aplicar, dimensiones y estado del muro."
+      ,"image":"calcular.png"
+    }
+  ]

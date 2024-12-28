@@ -1,27 +1,39 @@
 .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366; /* Color verde de WhatsApp */
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    animation: sacudida 12s infinite;
-  }
-  
-  @keyframes sacudida {
-    0%, 98% { transform: translateX(0); }
-  99% { transform: translateX(-2px); }
-  99.5% { transform: translateX(2px); }
-  100% { transform: translateX(-2px); }
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366; /* Color verde de WhatsApp */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: sacudida 12s infinite;
+  z-index: 10000;
+}
 
-  .whatsapp-button a {
-    color: #fff;
-    text-decoration: none;
+@keyframes sacudida {
+  0%,
+  98% {
+    transform: translateX(0);
   }
-  .whatsapp-button i{font-size: 1.8rem;}
+  99% {
+    transform: translateX(-2px);
+  }
+  99.5% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+.whatsapp-button a {
+  color: #fff;
+  text-decoration: none;
+}
+.whatsapp-button i {
+  font-size: 1.8rem;
+}
