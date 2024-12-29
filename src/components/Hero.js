@@ -50,15 +50,7 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
   const [error, setError] = useState("");
   const [guardando, setGuardando] = useState(false);
   const [estadoMuro, setEstadoMuro] = useState("regular");
-  /* const [espacios, setEspacios] = useState([{ ancho: '', alto: '' }]);
-
-    const agregarEspacio = () => {
-      if (espacios.length < 5) {
-        setEspacios([...espacios, { ancho: '', alto: '' }]);
-      } else {
-        alert('Has alcanzado el límite máximo de espacios.');
-      }
-    }; */
+  
 
   useEffect(() => {
     const trabajoSeleccionado = trabajosData.find(
@@ -76,8 +68,8 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
     try {
       const userAgent = navigator.userAgent;
 
-      const response = await fetch(
-        "/macros/s/AKfycbzJ3u7SAE5boL3_bDd7VjRomq7eNvvv0qFzJ30SC6OE5T3NUhdSZWH8d1-ftSSj3u0z4g/exec",
+      const response = await fetch(  
+        "https://script.google.com/macros/s/AKfycbz1ECfDqMgPwzuqEUkZp7koEh2nTma_mRJRrUK4ARv_5O3-Dts8v6nvgYP74yxSIlmjKg/exec",
         {
           method: "POST",
           headers: {
