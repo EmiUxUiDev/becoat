@@ -68,8 +68,7 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
     try {
       const userAgent = navigator.userAgent;
 
-      const response = await fetch(  
-        "https://script.google.com/macros/s/AKfycbz1ECfDqMgPwzuqEUkZp7koEh2nTma_mRJRrUK4ARv_5O3-Dts8v6nvgYP74yxSIlmjKg/exec",
+      const response = await fetch("https://script.google.com/macros/s/AKfycbz1ECfDqMgPwzuqEUkZp7koEh2nTma_mRJRrUK4ARv_5O3-Dts8v6nvgYP74yxSIlmjKg/exec",
         {
           method: "POST",
           headers: {
