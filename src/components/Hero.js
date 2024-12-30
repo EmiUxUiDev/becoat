@@ -73,6 +73,7 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
           headers: {
             "Content-Type": "application/json", // Muy importante para enviar datos JSON
           },
+          mode: "cors", // Esto habilita CORS
           body: JSON.stringify({
             userAgent,
             tipoTrabajo,
