@@ -57,7 +57,7 @@
 }
 .ver_mas_btn{
   border: none;
-  color: var(--clr-dark-grey);
+  color: #fff;
   background-color: var(--clr-primary);
 }
 .step_card>p {
