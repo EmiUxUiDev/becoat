@@ -66,7 +66,7 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
     setGuardando(true);
     try {
       const userAgent = navigator.userAgent;
-      const response = await fetch("https://script.google.com/macros/s/AKfycbzEsl-F2aVlBBpOte-lbRnY0FQfG42lpR1TATq0focxGjIWCQQV_yn_qOc0PrKt7dezfQ/exec",
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxgS_l_Un0lgXwRF69Oc-Q06arK1geNXZgBSDgTv87p88Yk-HNOWmPXiZILCsR4bT7H_w/exec",
 
         {
           method: "POST",
