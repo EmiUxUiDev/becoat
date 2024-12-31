@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import "../styles/Modal.css";
 import "../styles/Hero.css";
 import trabajosData from "../data/trabajos.json";
-import becoatLogo from "../assets/LogoBecoat.png"
+import becoatLogo from "../assets/LogoBecoat.png";
 
 const Hero = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
 
       <button id="cta-button" onClick={openModal}>
-               Calculalo vos mismo!
+        Calculalo vos mismo!
       </button>
 
       <PresupuestoModal isOpen={modalIsOpen} onRequestClose={closeModal} />
@@ -50,7 +50,6 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
   const [error, setError] = useState("");
   const [guardando, setGuardando] = useState(false);
   const [estadoMuro, setEstadoMuro] = useState("regular");
-  
 
   useEffect(() => {
     const trabajoSeleccionado = trabajosData.find(
@@ -67,7 +66,8 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
     setGuardando(true);
     try {
       const userAgent = navigator.userAgent;
-            const response = await fetch("https://script.google.com/macros/s/AKfycbzGBaNWz2v8Cu7LaRet0AyLu1-B6rk5-DhEVNb913_ppbYOVZT0ynbu3FdW8g2t15K1dg/exec",
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzEsl-F2aVlBBpOte-lbRnY0FQfG42lpR1TATq0focxGjIWCQQV_yn_qOc0PrKt7dezfQ/exec",
+
         {
           method: "POST",
           headers: {
@@ -144,7 +144,6 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
   };
 
   return (
-    
     <Modal
       appElement={document.getElementById("root")}
       isOpen={isOpen}
@@ -153,11 +152,10 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
       overlayClassName="my-overlay" // Clase para el overlay
       contentLabel="Modal de Presupuesto"
     >
-      
       <div className="modal-content">
         <div className="LogoTitulo">
-        <img id="becoatLogo" src={becoatLogo} alt="Logo de Becoat" />
-        <h2>Presupuesto de Pintura</h2>
+          <img id="becoatLogo" src={becoatLogo} alt="Logo de Becoat" />
+          <h2>Presupuesto de Pintura</h2>
         </div>
         {error && <p style={{ color: "red" }}>{error}</p>}
 
@@ -280,8 +278,8 @@ const PresupuestoModal = ({ isOpen, onRequestClose }) => {
           )}
         </div>
         <button className="cerrar_btn" onClick={onRequestClose}>
-            Cerrar
-          </button>
+          Cerrar
+        </button>
       </div>
     </Modal>
   );

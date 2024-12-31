@@ -59,6 +59,7 @@
   border: none;
   color: #fff;
   background-color: var(--clr-primary);
+  border-radius: 5px;
 }
 .step_card>p {
   overflow: hidden;
